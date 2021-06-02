@@ -16,7 +16,7 @@ MAPTYPES = (dict, collections.abc.Mapping)
 KNOWN_TITER_SYMBOLS = ['<', '>', '/', '*', ' ', '?']
 REQUIRED_EXP_KEYS = ['titers', 'antigen_ids', 'serum_ids', 'assay', 'file', 'conducted_by']
 
-class db_list(list):
+class db_list():
     '''
     This is the base parent class for db_antigen_list, db_serum_list, db_experiment_list
     which are esentially lists with some extra functionality such as adding items need
